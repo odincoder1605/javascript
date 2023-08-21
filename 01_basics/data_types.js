@@ -17,3 +17,17 @@ let isLoggedIn = false
 console.log(typeof null);
 console.log(typeof undefined);
 console.table([age,name,isLoggedIn])
+
+let str1 = "Hello";
+let str2 = " World";
+
+console.log(str1+str2);
+
+console.log("1"+2);
+console.log(1+"2");
+
+console.log("1"+2+2);
+console.log(1+2+"2");
+
+console.log(+true);
+console.log(+"");
