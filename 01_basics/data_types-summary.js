@@ -37,3 +37,29 @@ const myFunction = function(){
 console.log(typeof null);
 console.log(typeof myFunction);
 
+
+// ***********************************************
+
+// Stack memory (Primitive) and heap memory (non-primitive)
+
+let channelname = "odincoder";
+
+let anotherchannel = channelname;
+
+anotherchannel = "procoder";
+
+console.log(anotherchannel);
+console.log(channelname);
+
+let userOne = {
+    email: "himadri@google.com",
+    name: "Himadri"
+}
+
+let usertwo = userOne;
+
+usertwo.email  = "himadri@meta.com";
+
+console.log(userOne.email);
+console.log(usertwo.email);
+
