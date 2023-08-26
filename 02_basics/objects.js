@@ -20,7 +20,7 @@ const JsUser = {
 // console.log(JsUser.email);
 // console.log(JsUser["email"]);
 // console.log(JsUser["School"]);
-// console.log(JsUser[mySym]);
+// console.log(JsUser[mySym]); // Symbol data type property access  
 
 // Changing the value of a key in object
 
