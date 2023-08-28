@@ -70,13 +70,19 @@ if(Object.keys(userEmail).length === 0){
 // Nullish Coalescing Operator (??) : null undefined
 
 let val1;
-val1 = 5 ?? 10
-val1 = null ?? 10;
+// val1 = 5 ?? 10
+// val1 = null ?? 10;
+// val1 = undefined?? 14;
+// console.log(val1);
 
-
-
-
-
-
+val1 = null??20??10;
 console.log(val1);
 
+
+// Ternary operator
+
+// condition? true:false
+
+const iceTeaPrice = 100;
+
+iceTeaPrice>=80 ? console.log("Greater than 80"): console.log("Less than 80");
