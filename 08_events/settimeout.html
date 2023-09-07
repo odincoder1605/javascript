@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+    <script>
+        const namePrint =function(){
+                console.log("Himadri");
+        }
+        setTimeout(
+        namePrint,2000);
+    
+    const changeH1 = function(){
+        document.querySelector('h1').innerHTML="best JS Series"
+    }
+    let timeout = setTimeout(changeH1,2000);
+
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(timeout);
+        console.log("STOPPED");
+    })
+    </script>
+</body>
+</html>

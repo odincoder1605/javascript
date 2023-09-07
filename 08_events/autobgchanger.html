@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Background Color Picker</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    <div class="color" style ="font-size:large;padding:20px;text-align: center;"></div>
+    <script>
+    
+        const randomColor = function(){
+            const hexsys = "0123456789ABCDEF";
+            let color ="#";
+            for(let i=0;i<6;i++){
+            color = color + hexsys[Math.floor(Math.random()*16)];
+        }
+        return color;
+    }
+        let interval;
+        const startChangingColor = function(){
+            if(!interval){
+                interval = setInterval(changeBgColor,1000);
+            }
+           function changeBgColor (){
+            let color = randomColor();
+            document.querySelector('.color').innerHTML = color;
+            document.body.style.backgroundColor = color;
+           }
+        };
+        const stopChangingColor = function(){
+            clearInterval(interval);
+            interval = null;
+        };
+       document.getElementById('start').addEventListener('click',startChangingColor);
+       document.getElementById('stop').addEventListener('click',stopChangingColor);
+    </script>
+</body>
+</html>
