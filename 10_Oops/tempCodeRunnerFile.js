@@ -1,2 +1,5 @@
-himadri = new User("himadri")
-// console.log(himadri.createId());
+Object.defineProperty(Math,"PI",{
+//     writable:true,
+//     enumerable:true,
+//     configurable:true
+// })
